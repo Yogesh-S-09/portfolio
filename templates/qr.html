@@ -7,12 +7,17 @@
     <body>
         {% include 'nav.html' %}
 
-        <h1>QR Creator</h1>
-        <form action="/qr/img" method="post">
-            <label>Enter a Text</label>
-            <input type="text" name="word">
-            <input type="submit" value="Fetch">
-        </form>
+        <h1 class="text-uppercase fs-1 fw-bolder text-center">QR Creator</h1>
+        <div style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 
+        'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        display: block;
+        text-align: center;">
+            <form action="/qr/img" method="post">
+                <label class="fs-3" >Enter a Text</label><br>
+                <input type="text" name="word"><br>
+                <input class="mt-2 btn btn-secondary"  type="submit" value="Fetch"><br>
+            </form>
+        </div>
 
         {% include 'footer.html' %}
     </body>

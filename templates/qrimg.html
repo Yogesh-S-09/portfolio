@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html>
     <head>
+        {% include 'bootstrap.html' %}
         <title>Image</title>
     </head>
     <body>
-        <img src={{mean}} alt="qr">
+        {% include 'nav.html' %}
+        <hl class="fs-1 fw-bolder text-center">U'r code for {{mean}}</hl><br>
+        <img src="../qrimg.png" alt="qr">
+        {% include 'footer.html' %}
     </body>
 </html>

@@ -26,7 +26,7 @@ def meaning():
 def qrimg():
     data=request.form
     Word=generate_qrcode(data['word'])
-    return render_template("qrimg.html",mean=Word)
+    return render_template("qrimg.html",mean=data['word'])
 
 if(__name__ == "__main__"):
     app.run(host="0.0.0.0" ,debug=True)
