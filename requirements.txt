@@ -1,2 +1,5 @@
 Flask
 gunicorn
+-e git+https://github.com/yeahwhat-mc/goslate#egg=goslate
+PyDictionary
+qrcode
