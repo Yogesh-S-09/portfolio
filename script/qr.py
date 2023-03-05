@@ -12,5 +12,3 @@ def generate_qrcode(text):
     img = qr.make_image(fill_color="black", back_color="white")
     return img
     
-url = input("Enter your url: ")
-generate_qrcode(url)
