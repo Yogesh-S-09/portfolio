@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>QR Creator</title>
+        {% include 'bootstrap.html' %}
+    </head>
+    <body>
+        {% include 'nav.html' %}
+
+        <h1>QR Creator</h1>
+        <form action="/qr/img" method="post">
+            <label>Enter a Text</label>
+            <input type="text" name="word">
+            <input type="submit" value="Fetch">
+        </form>
+
+        {% include 'footer.html' %}
+    </body>
+</html>

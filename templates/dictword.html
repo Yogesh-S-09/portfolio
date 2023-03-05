@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {% include 'bootstrap.html' %}
+        <title>{{word}}</title>
+    </head>
+    <body>
+        {% include 'nav.html' %}
+        <h1>Meaning of word : <b>{{word}}</b></h1>
+        <ol style="display:block;padding: 5%;border: 3px solid black;text-align:justify">
+        {% for pn in mean %}
+        <li>
+            {{pn}}
+            <ul>
+                {% for i in mean[pn] %}
+                <li>{{i}}</li>
+                {% endfor %}
+            </ul>
+        </li>
+        {% endfor %}
+        </ol>
+
+        {% include 'footer.html' %}
+    </body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {% include 'bootstrap.html' %}
+    </head>
+    <body >
+        {% include 'nav.html' %}
+
+        <p class="text-uppercase fs-1 fw-bolder text-center">Hello</p>
+        <div style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 
+        'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        display: block;
+        text-align: center;">
+            <form action="/dict/meaning" method="post">
+                <label class="fs-3" >Enter a word</label><br>
+                <input type="text" name="word"><br>
+                <input class="mt-2 btn btn-secondary" type="submit" value="Search" ><br>
+            </form>
+        </div>
+        {% include 'footer.html' %}
+    </body>
+</html>
