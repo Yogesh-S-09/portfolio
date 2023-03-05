@@ -2,10 +2,10 @@ from PyDictionary import PyDictionary
 
 dictionary=PyDictionary()
 def mean(word):
-    return dictionary.meaning(word)
+    x = dictionary.meaning(word)
+    for i in x:
+        for j in range(len(x[i])):
+            x[i][j]=x[i][j].translate( { ord('('):None , ord('`'):ord('"') ,ord("'"):ord('"') } )
+    return x
 
-x=mean(input("Enter a world:"))
-for i in x:
-    print(i+'=',x[i])
-
-print(x)
+print(mean('good'))
